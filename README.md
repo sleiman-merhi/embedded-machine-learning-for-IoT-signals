@@ -52,7 +52,7 @@ outputs the predicted environmental class over UART in real time.
 
 ![System Architecture](images/system_image_pro.png)
 
-![System Architecture](images/system_hardware_connections.png)
+![Hardware Connections](images/system_hardware_connections.jpg)
 
 ### Software Prerequisites
 - STM32CubeIDE
