@@ -77,6 +77,19 @@ Two independent training approaches were performed using NanoEdge AI Studio and 
 - Normalization: StandardScaler
 - **Test Accuracy: 99.94%**
 
+<table>
+  <tr>
+    <td align="center">
+      <img src="images/classification_report.png" width="400"><br>
+      Image 1 Caption
+    </td>
+    <td align="center">
+      <img src="images/confusion_matrix.png" width="400"><br>
+      Image 2 Caption
+    </td>
+  </tr>
+</table>
+
 | | |
 |---|---|
 | Python Training Results | Python Confusion Matrix |
