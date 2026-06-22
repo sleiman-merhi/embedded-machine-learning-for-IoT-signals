@@ -52,7 +52,7 @@ outputs the predicted environmental class over UART in real time.
 
 ![System Architecture](images/system_image_pro.png)
 
-![System Architecture](images/system_interface_summary.png)
+![System Architecture](images/system_hardware_connections.png)
 
 ### Software Prerequisites
 - STM32CubeIDE
@@ -125,7 +125,10 @@ The firmware main.c was developed in STM32CubeIDE using STM32 HAL drivers, with 
 
 - The deployed NanoEdge AI model was validated on the NUCLEO-WL55JC1 board through real-time testing of all eight environmental classes. 
 - UART outputs monitored via Tera Term showed sensor readings and predictions at 1 Hz, confirming consistent and accurate classification under controlled conditions.
+- All 8 conditions were predicted correctly by the system
 - Real-time classification output in Tera Term:
+
+![Fire Alert Example](images/Fire_Alert.png) ![Frost Risk Example](images/frost_risk_tera-image.png)
 
 ---
 
@@ -142,6 +145,8 @@ The firmware main.c was developed in STM32CubeIDE using STM32 HAL drivers, with 
 ## Conclusion
 
 This thesis developed a low-power embedded AI system on the STM32WL55JC for real-time agricultural environmental monitoring using five sensors and on-device classification of eight environmental states. The system achieved high accuracy through both Python-based validation (99.94%) and NanoEdge AI deployment (99.9% balanced accuracy), while maintaining minimal memory usage. Real-world testing confirmed reliable autonomous operation without cloud dependency, demonstrating the feasibility of TinyML for precision agriculture and IoT applications.
+
+![System Packaging](images/system_final_package.png)
 
 ## License
 
