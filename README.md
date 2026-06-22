@@ -50,9 +50,17 @@ outputs the predicted environmental class over UART in real time.
 | Light Intensity | BH1750 | I2C (PB6/PB7) |
 | PIR Motion | HC-SR501 | GPIO (PB0) |
 
-![System Architecture](images/system_image_pro.png)
+<p align="center">
+  <img src="images/system_image_pro.jpg" width="600" height="400">
+  <br>
+  <em>System Architecture</em>
+</p>
 
-![Hardware Connections](images/system_hardware_connections.jpg)
+<p align="center">
+  <img src="images/system_hardware_connections.jpg" width="600" height="400">
+  <br>
+  <emHardware Connections</em>
+</p>
 
 ### Software Prerequisites
 - STM32CubeIDE
@@ -80,20 +88,15 @@ Two independent training approaches were performed using NanoEdge AI Studio and 
 <table>
   <tr>
     <td align="center">
-      <img src="images/classification_report.png" width="400"><br>
-      Image 1 Caption
+      <img src="images/classification_report.png" width="500"><br>
+      Python Training Results
     </td>
     <td align="center">
-      <img src="images/confusion_matrix.png" width="400"><br>
-      Image 2 Caption
+      <img src="images/confusion_matrix.png" width="500"><br>
+      Python Confusion Matrix
     </td>
   </tr>
 </table>
-
-| | |
-|---|---|
-| Python Training Results | Python Confusion Matrix |
-| ![Python Training Results](images/classification_report.png) | ![Python Confusion Matrix](images/confusion_matrix.png) |
 
 ### NanoEdge AI Studio
 - Algorithm: RF (auto-selected)
