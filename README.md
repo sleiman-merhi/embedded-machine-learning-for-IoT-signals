@@ -49,7 +49,10 @@ outputs the predicted environmental class over UART in real time.
 | Temperature & Humidity | DHT22 | GPIO (PB5) |
 | Light Intensity | BH1750 | I2C (PB6/PB7) |
 | PIR Motion | HC-SR501 | GPIO (PB0) |
-![System Architecture](images/.png)
+
+![System Architecture](images/system_image_pro.png)
+
+![System Architecture](images/system_interface_summary.png)
 
 ### Software Prerequisites
 - STM32CubeIDE
@@ -73,7 +76,8 @@ Two independent training approaches were performed using NanoEdge AI Studio and 
 - Train/Test split: 80/20 stratified
 - Normalization: StandardScaler
 - **Test Accuracy: 99.94%**
-![Python Training Results](images/classification_report.png)
+
+![Python Training Results](images/classification_report.png) ![Python Confusion Matrix](images/confusion_matrix.png)
 
 ### NanoEdge AI Studio
 - Algorithm: RF (auto-selected)
@@ -81,6 +85,7 @@ Two independent training approaches were performed using NanoEdge AI Studio and 
 - RAM: 0.1 KB
 - Flash: 29.1 KB
 - Inference time: < 0.1 ms
+
 ![NanoEdge AI Benchmark](images/benchmark-22-06-2026.png)
 
 ---
