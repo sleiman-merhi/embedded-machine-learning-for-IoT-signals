@@ -50,14 +50,14 @@ outputs the predicted environmental class over UART in real time.
 | Light Intensity | BH1750 | I2C (PB6/PB7) |
 | PIR Motion | HC-SR501 | GPIO (PB0) |
 
-<p align="center">
-  <img src="images/system_image_pro.png" width="600">
+<p align="left">
+  <img src="images/system_image_pro.png" width="700">
   <br>
   <em>System Architecture</em>
 </p>
 
-<p align="center">
-  <img src="images/system_hardware_connections.jpg" width="600">
+<p align="left">
+  <img src="images/system_hardware_connections.jpg" width="700">
   <br>
   <em>Hardware Connections</em>
 </p>
