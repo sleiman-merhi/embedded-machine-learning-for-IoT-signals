@@ -51,7 +51,7 @@ outputs the predicted environmental class over UART in real time.
 | PIR Motion | HC-SR501 | GPIO (PB0) |
 
 <p align="center">
-  <img src="images/system_image_pro.jpg" width="600" height="400">
+  <img src="images/system_image_pro.jpg" width="600">
   <br>
   <em>System Architecture</em>
 </p>
@@ -150,11 +150,11 @@ The firmware main.c was developed in STM32CubeIDE using STM32 HAL drivers, with 
 <table>
   <tr>
     <td align="center">
-      <img src="images/Fire_alert.png" width="500" height="500"><br>
+      <img src="images/Fire_alert.png" width="500"><br>
      Fire Alert Example
     </td>
     <td align="center">
-      <img src="images/frost_risk_tera-image.png" width="500" height="500"><br>
+      <img src="images/frost_risk_tera-image.png" width="500" ><br>
       Frost Risk Example
     </td>
   </tr>
