@@ -59,7 +59,7 @@ outputs the predicted environmental class over UART in real time.
 <p align="center">
   <img src="images/system_hardware_connections.jpg" width="600" height="400">
   <br>
-  <emHardware Connections</em>
+  <em>Hardware Connections</em>
 </p>
 
 ### Software Prerequisites
@@ -147,7 +147,18 @@ The firmware main.c was developed in STM32CubeIDE using STM32 HAL drivers, with 
 - All 8 conditions were predicted correctly by the system
 - Real-time classification output in Tera Term:
 
-![Fire Alert Example](images/Fire_alert.png) ![Frost Risk Example](images/frost_risk_tera-image.png)
+<table>
+  <tr>
+    <td align="center">
+      <img src="images/Fire_alert.png" width="500" height="500"><br>
+     Fire Alert Example
+    </td>
+    <td align="center">
+      <img src="images/frost_risk_tera-image.png" width="500" height="500"><br>
+      Frost Risk Example
+    </td>
+  </tr>
+</table>
 
 ---
 
