@@ -78,7 +78,7 @@ Two independent training approaches were performed using NanoEdge AI Studio and 
 - **Test Accuracy: 99.94%**
 | | |
 |---|---|
-| Python Training Results | Python Confusion Matrix|
+| Python Training Results | Python Confusion Matrix |
 | ![Python Training Results](images/classification_report.png) | ![Python Confusion Matrix](images/confusion_matrix.png) |
 
 ### NanoEdge AI Studio
