@@ -51,13 +51,13 @@ outputs the predicted environmental class over UART in real time.
 | PIR Motion | HC-SR501 | GPIO (PB0) |
 
 <p align="center">
-  <img src="images/system_image_pro.jpg" width="600">
+  <img src="images/system_image_pro.png" width="600">
   <br>
   <em>System Architecture</em>
 </p>
 
 <p align="center">
-  <img src="images/system_hardware_connections.jpg" width="600" height="400">
+  <img src="images/system_hardware_connections.jpg" width="600">
   <br>
   <em>Hardware Connections</em>
 </p>
@@ -172,11 +172,20 @@ The firmware main.c was developed in STM32CubeIDE using STM32 HAL drivers, with 
 
 ---
 
+## Challenges
+- Hardware integration challenge: The DHT22 sensor required precise timing and protocol handling, which was solved through correct firmware implementation and system clock optimization.
+- Data collection challenge: Initial datasets lacked sufficient environmental variation, causing distribution shifts during testing.
+- Model improvement: Additional data generation and dataset augmentation were applied to improve model generalization and reliability.
+
 ## Conclusion
 
 This thesis developed a low-power embedded AI system on the STM32WL55JC for real-time agricultural environmental monitoring using five sensors and on-device classification of eight environmental states. The system achieved high accuracy through both Python-based validation (99.94%) and NanoEdge AI deployment (99.9% balanced accuracy), while maintaining minimal memory usage. Real-world testing confirmed reliable autonomous operation without cloud dependency, demonstrating the feasibility of TinyML for precision agriculture and IoT applications.
 
-![System Packaging](images/system_final_package.jpg)
+<p align="center">
+  <img src="images/system_final_package.jpg" width="600">
+  <br>
+  <em>System Packaging</em>
+</p>
 
 ## License
 
