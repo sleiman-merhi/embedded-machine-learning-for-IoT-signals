@@ -128,7 +128,7 @@ The firmware main.c was developed in STM32CubeIDE using STM32 HAL drivers, with 
 - All 8 conditions were predicted correctly by the system
 - Real-time classification output in Tera Term:
 
-![Fire Alert Example](images/Fire_Alert.png) ![Frost Risk Example](images/frost_risk_tera-image.png)
+![Fire Alert Example](images/Fire_alert.png) ![Frost Risk Example](images/frost_risk_tera-image.png)
 
 ---
 
@@ -146,7 +146,7 @@ The firmware main.c was developed in STM32CubeIDE using STM32 HAL drivers, with 
 
 This thesis developed a low-power embedded AI system on the STM32WL55JC for real-time agricultural environmental monitoring using five sensors and on-device classification of eight environmental states. The system achieved high accuracy through both Python-based validation (99.94%) and NanoEdge AI deployment (99.9% balanced accuracy), while maintaining minimal memory usage. Real-world testing confirmed reliable autonomous operation without cloud dependency, demonstrating the feasibility of TinyML for precision agriculture and IoT applications.
 
-![System Packaging](images/system_final_package.png)
+![System Packaging](images/system_final_package.jpg)
 
 ## License
 
