@@ -44,7 +44,7 @@ outputs the predicted environmental class over UART in real time.
 | Component | Model | Interface |
 |-----------|-------|-----------|
 | Microcontroller Board | NUCLEO-WL55JC1 | — |
-| CO2 Sensor | MQ-135 | ADC (PB1) |
+| Air Quality Sensor (CO2) | MQ-135 | ADC (PB1) |
 | Smoke & Gas Sensor | MQ-2 | ADC (PA10) |
 | Temperature & Humidity | DHT22 | GPIO (PB5) |
 | Light Intensity | BH1750 | I2C (PB6/PB7) |
@@ -70,8 +70,8 @@ outputs the predicted environmental class over UART in real time.
 
 ### Data Collection
 - Data was collected using the sensors deployed on the NUCLEO-WL55JC1 board.
-- Sensor readings were transmitted via USART2 at 1 Hz and logged into CSV files, producing a labeled dataset of 16,000 samples across eight environmental classes (2,000 samples per class).
 - Controlled physical scenarios were created for each class to generate realistic sensor patterns, with recordings performed under varying conditions to improve model generalization.
+- Sensor readings were transmitted via USART2 at 1 Hz and logged into CSV files, producing a labeled dataset of 16,000 samples across eight environmental classes (2,000 samples per class).
 
 ---
 
@@ -115,7 +115,6 @@ The firmware main.c was developed in STM32CubeIDE using STM32 HAL drivers, with 
 ### Code Functionality Overview (Step-by-Step)
 1. System and Peripheral Initialization
    Initializes the STM32 HAL library, system clock, GPIO, ADC, I2C, Timer, and UART peripherals.
-   Starts TIM2 for microsecond delays and initializes the BH1750 light sensor.
    Loads the NanoEdge AI classification model into memory.
    
 2. Sensor Data Acquisition
