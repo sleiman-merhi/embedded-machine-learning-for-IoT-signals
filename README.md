@@ -102,7 +102,7 @@ Two independent training approaches were performed using NanoEdge AI Studio and 
 - Algorithm: RF (auto-selected)
 - **Balanced Accuracy: 99.9%**
 - RAM: 0.1 KB
-- Flash: 29.1 KB
+- Flash: 22.9 KB
 - Inference time: < 0.1 ms
 
 ![NanoEdge AI Benchmark](images/benchmark-22-06-2026.png)
